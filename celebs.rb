@@ -234,3 +234,7 @@ $celebs_list = [ { crime: 1 , name: "Aidan Quinn", url: "http://www.thesmokinggu
 { crime: 1 , name: "Tracey Gold", url: "http://www.thesmokinggun.com/mugshots/celebrity/television/tracey-gold", image: "http://www.thesmokinggun.com/sites/default/files/imagecache/670xX/photos/tgoldmug1.jpg" },
 { crime: 8 , name: "Yasmine Bleeth", url: "http://www.thesmokinggun.com/mugshots/celebrity/television/yasmine-bleeth", image: "http://www.thesmokinggun.com/sites/default/files/imagecache/670xX/photos/bleethmug.jpg" },
 ]
+
+$celebs_list.each do |celeb|
+	puts celeb[:crime].to_s +  celeb[:name]
+end
